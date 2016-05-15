@@ -46,7 +46,7 @@ class TaskType extends AbstractType
      */
     public function getName()
     {
-        return "add_new_task";
+        return "";
     }
 
 
