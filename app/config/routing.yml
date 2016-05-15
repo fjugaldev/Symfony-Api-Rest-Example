@@ -1,0 +1,13 @@
+rootstack_task:
+    resource: "@RootstackTaskBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+tasks:
+    type: rest
+    resource: "@RootstackTaskBundle/Controller/TaskController.php"
+    prefix:   /api
