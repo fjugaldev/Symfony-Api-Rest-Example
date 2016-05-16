@@ -35,6 +35,13 @@ class Task
      * @ORM\Column(name="description", type="string", length=255)
      */
     private $description;
+
+    /**
+     * @var boolen
+     *
+     * @ORM\Column(name="is_done", type="boolean")
+     */
+    private $isDone;
     
 
     /**
@@ -91,5 +98,28 @@ class Task
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set isDone
+     *
+     * @param boolean $isDone
+     * @return Task
+     */
+    public function setIsDone($isDone)
+    {
+        $this->isDone = $isDone;
+
+        return $this;
+    }
+
+    /**
+     * Get isDone
+     *
+     * @return boolean 
+     */
+    public function getIsDone()
+    {
+        return $this->isDone;
     }
 }
